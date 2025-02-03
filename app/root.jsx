@@ -6,6 +6,8 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import { Analytics } from "@vercel/analytics/remix";
+
 export default function App() {
   return (
     <html>
@@ -19,6 +21,7 @@ export default function App() {
         />
         <Meta />
         <Links />
+        <Analytics />
       </head>
       <body>
         <Outlet />
