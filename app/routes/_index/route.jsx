@@ -19,7 +19,10 @@ export default function App() {
   return (
     <div className={styles.index}>
       <div className={styles.content}>
-        <h1 className={styles.heading}>The BEST Product QR Codes</h1>
+        <h1 className={styles.heading}>
+          The BEST Product QR Codes + Extensions ( Checkout, Customer,
+          Functions, Theme, etc. )
+        </h1>
         <p className={styles.text}>
           Convert product/checkout URLs into working QR Codes.
         </p>
@@ -37,16 +40,8 @@ export default function App() {
         )}
         <ul className={styles.list}>
           <li>
-            <strong>Product feature</strong>. Some detail about your feature and
-            its benefit to your customer.
-          </li>
-          <li>
-            <strong>Product feature</strong>. Some detail about your feature and
-            its benefit to your customer.
-          </li>
-          <li>
-            <strong>Product feature</strong>. Some detail about your feature and
-            its benefit to your customer.
+            <strong>Product feature</strong>. Convert products into QR Codes
+            that link to Checkout or PDP.
           </li>
         </ul>
       </div>
