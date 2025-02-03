@@ -1,0 +1,37 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "83ef08355e8b9d0f135d94cd986f9a1d"
+application_url = "https://disaster-dod-august-pci.trycloudflare.com"
+embedded = true
+name = "Product QR Codes"
+handle = "qr-code-419"
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "calebs-yachts.myshopify.com"
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2025-01"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_checkout_branding_settings,read_customer_events,read_files,read_themes,write_checkout_branding_settings,write_pixels,write_products,write_cart_transforms,write_discounts,write_validations"
+
+[auth]
+redirect_urls = [
+  "https://disaster-dod-august-pci.trycloudflare.com/auth/callback",
+  "https://disaster-dod-august-pci.trycloudflare.com/auth/shopify/callback",
+  "https://disaster-dod-august-pci.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
