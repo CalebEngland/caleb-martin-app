@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div className={styles.index}>
       <div className={styles.content}>
-        <h1 className={styles.heading}>Product QR Codes</h1>
+        <h1 className={styles.heading}>The BEST Product QR Codes</h1>
         <p className={styles.text}>
           Convert product/checkout URLs into working QR Codes.
         </p>
