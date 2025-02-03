@@ -23,7 +23,7 @@
     "node": "^18.20 || ^20.10 || >=21.0.0"
   },
   "dependencies": {
-    "@prisma/client": "^6.2.1",
+    "@prisma/client": "^6.3.0",
     "@remix-run/dev": "^2.7.1",
     "@remix-run/fs-routes": "^2.15.0",
     "@remix-run/node": "^2.7.1",
@@ -35,7 +35,7 @@
     "@shopify/shopify-app-session-storage-prisma": "^6.0.0",
     "dompurify": "^3.2.3",
     "isbot": "^5.1.0",
-    "prisma": "^6.2.1",
+    "prisma": "^6.3.0",
     "qrcode": "^1.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
