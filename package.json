@@ -2,7 +2,7 @@
   "name": "qr-code",
   "private": true,
   "scripts": {
-    "build": "remix vite:build",
+    "build": "remix vite:build && prisma generate",
     "dev": "shopify app dev",
     "config:link": "shopify app config link",
     "generate": "shopify app generate",
