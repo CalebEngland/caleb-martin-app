@@ -19,6 +19,7 @@ export default function App() {
           rel="stylesheet"
           href="https://cdn.shopify.com/static/fonts/inter/v4/styles.css"
         />
+        <title>Better QR Codes Plus</title>
         <Meta />
         <Links />
         <Analytics />
