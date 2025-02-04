@@ -1,73 +1,139 @@
-.index {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  padding: 1rem;
+:root {
+  --container-width: 1200px;
+  /* Colors */
+  --color-darkblue: #203354;
+  --color-white: #ffffff;
+  /* Typography */
+  --main-font-size: 16px;
+  --main-font-family: Montserrat, Arial, Helvetica;
+  /* Spacing */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
 }
 
-.heading,
-.text {
-  padding: 0;
+/* Global Styles */
+
+* {
   margin: 0;
+  padding: 0;
 }
 
-.text {
-  font-size: 1.2rem;
-  padding-bottom: 2rem;
-}
-
-.content {
-  display: grid;
-  gap: 2rem;
-}
-
-.form {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+body {
+  background-color: var(--color-darkblue);
+  color: var(--color-white);
+  font-size: var(--main-font-size);
+  font-family: var(--main-font-family);
+  padding: var(--spacing-4);
+  max-width: var(--container-width);
   margin: 0 auto;
-  gap: 1rem;
 }
 
-.label {
-  display: grid;
-  gap: 0.2rem;
-  max-width: 20rem;
-  text-align: left;
+.h1,
+h1 {
+  font-size: 2rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
+.h2,
+h2 {
+  font-size: 1.75rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 3.5rem;
+  }
+}
+
+.h3,
+h3 {
+  font-size: 1.5rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+.h4,
+h4 {
+  font-size: 1.25rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
+
+.h5,
+h5 {
   font-size: 1rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
 }
 
+.h6,
+h6 {
+  font-size: 0.75rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  font-size: 0.85rem;
+  margin: 0.5rem 0 1rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+input,
 .input {
-  padding: 0.4rem;
+  padding: var(--spacing-2);
+  min-width: 300px;
 }
 
-.button {
-  padding: 0.4rem;
+.button,
+button {
+  min-width: 200px;
+  border-radius: 10px;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: var(--spacing-2);
+  transition: background-color 0.15s ease-in;
+  margin: var(--spacing-2);
 }
+
+.button:hover,
+button:hover {
+  background-color: var(--color-white);
+  color: var(--color-darkblue);
+  cursor: pointer;
+}
+
+/* Summary */
+
+.summary {
+  font-style: italic;
+}
+
+/* Product Features */
 
 .list {
-  list-style: none;
-  padding: 0;
-  padding-top: 3rem;
-  margin: 0;
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  gap: var(--spacing-2);
+  margin: var(--spacing-4) 0;
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.list > li {
-  max-width: 20rem;
-  text-align: left;
-}
-
-@media only screen and (max-width: 50rem) {
-  .list {
-    display: block;
-  }
-
-  .list > li {
-    padding-bottom: 1rem;
-  }
+.list li {
+  list-style-type: none;
+  background-color: #ffffff;
+  color: var(--color-darkblue);
+  padding: var(--spacing-4);
+  width: auto;
+  border-radius: 10px;
 }

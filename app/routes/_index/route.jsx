@@ -19,31 +19,26 @@ export default function App() {
   return (
     <div className={styles.index}>
       <div className={styles.content}>
-        <h1 className={styles.heading}>
-          The BEST Product QR Codes + Extensions ( Checkout, Customer,
-          Functions, Theme, etc. )
-        </h1>
-        <p className={styles.text}>
-          Convert product/checkout URLs into working QR Codes.
-        </p>
+        <h1>Better QR Codes Plus</h1>
+        <p className={styles.summary}>The last QR Code app you'll ever need.</p>
+        <h2>App Features</h2>
+        <ul className={styles.list}>
+          <li>Convert product URLs into working QR Codes</li>
+          <li>Countdown timer - ( Theme App Extension )</li>
+          <li>Several checkout UI extensions & more!</li>
+        </ul>
         {showForm && (
           <Form className={styles.form} method="post" action="/auth/login">
             <label className={styles.label}>
-              <span>Shop domain</span>
+              <h3>Shop domain:</h3>
               <input className={styles.input} type="text" name="shop" />
-              <span>e.g: my-shop-domain.myshopify.com</span>
+              <button className={styles.button} type="submit">
+                Log in
+              </button>
+              <p>e.g: my-shop-domain.myshopify.com</p>
             </label>
-            <button className={styles.button} type="submit">
-              Log in
-            </button>
           </Form>
         )}
-        <ul className={styles.list}>
-          <li>
-            <strong>Product feature</strong>. Convert products into QR Codes
-            that link to Checkout or PDP.
-          </li>
-        </ul>
       </div>
     </div>
   );
