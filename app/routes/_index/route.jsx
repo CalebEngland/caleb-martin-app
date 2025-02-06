@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div className={styles.index}>
       <div className={styles.content}>
-        <h1>Better QR Codes Plus</h1>
+        <h1>Better QR Codes Plus+++</h1>
         <p className={styles.summary}>The last QR Code app you'll ever need.</p>
         <h2>App Features</h2>
         <ul className={styles.list}>
