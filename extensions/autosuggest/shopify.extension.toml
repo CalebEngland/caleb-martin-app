@@ -6,8 +6,8 @@
 api_version = "2024-07"
 
 [[extensions]]
-name = "example-checkout-address--js"
-handle = "example-checkout-address--js"
+name = "checkout-address-suggest--js"
+handle = "checkout-address-suggest--js"
 type = "ui_extension"
 
 # Controls where in Shopify your extension will be injected,

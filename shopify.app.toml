@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "83ef08355e8b9d0f135d94cd986f9a1d"
-application_url = "https://disaster-dod-august-pci.trycloudflare.com"
+application_url = "https://creation-major-stable-valuation.trycloudflare.com"
 embedded = true
 name = "Product QR Codes"
 handle = "qr-code-419"
@@ -28,9 +28,9 @@ scopes = "read_checkout_branding_settings,read_customer_events,read_files,read_t
 
 [auth]
 redirect_urls = [
-  "https://disaster-dod-august-pci.trycloudflare.com/auth/callback",
-  "https://disaster-dod-august-pci.trycloudflare.com/auth/shopify/callback",
-  "https://disaster-dod-august-pci.trycloudflare.com/api/auth/callback"
+  "https://creation-major-stable-valuation.trycloudflare.com/auth/callback",
+  "https://creation-major-stable-valuation.trycloudflare.com/auth/shopify/callback",
+  "https://creation-major-stable-valuation.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

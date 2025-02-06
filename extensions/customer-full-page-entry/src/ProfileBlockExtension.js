@@ -31,7 +31,7 @@ export default extension(
     const buttonComponent = root.createComponent(
       Link,
       {
-        to: "extension:ca-wishlist-js-full-page/",
+        to: "extension:customer-full-page/",
       },
       "View wishlist",
     );

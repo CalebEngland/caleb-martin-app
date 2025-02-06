@@ -38,8 +38,16 @@ function App() {
   const { title, description } = issue;
 
   useEffect(() => {
-    getIssues(data.selected[0].id).then((issues) => setAllIssues(issues || []));
-  });
+    let mounted = true;
+    getIssues(data.selected[0].id).then((issues) => {
+      if (mounted) {
+        setAllIssues(issues || []);
+      }
+    });
+    return () => {
+      mounted = false;
+    };
+  }, [data.selected[0].id]);
 
   const onSubmit = useCallback(async () => {
     const { isValid, errors } = validateForm(issue);

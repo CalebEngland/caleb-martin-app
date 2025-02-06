@@ -56,14 +56,18 @@ async function makeGraphQLQuery(query, variables) {
     variables,
   };
 
-  const res = await fetch("shopify:admin/api/graphql.json", {
-    method: "POST",
-    body: JSON.stringify(graphQLQuery),
-  });
+  try {
+    const res = await fetch("shopify:admin/api/graphql.json", {
+      method: "POST",
+      body: JSON.stringify(graphQLQuery),
+    });
 
-  if (!res.ok) {
-    console.error("Network error");
+    if (!res.ok) {
+      throw new Error(`Network error: ${res.status}`);
+    }
+    return await res.json();
+  } catch (error) {
+    console.error("GraphQL query failed:", error);
+    throw error;
   }
-
-  return await res.json();
 }
